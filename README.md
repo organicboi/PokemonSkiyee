@@ -1,24 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Our Special Place - A Romantic Interactive Website
+
+This is a special interactive website that combines Pokemon, Hatsune Miku, mysteries, and spooky elements to rekindle the spark in your relationship.
 
 ## Getting Started
 
-First, run the development server:
+First, you'll need to add the images for your app:
+
+### Required Images
+
+Before running the app, you need to add the following images:
+
+#### Pokemon Images (in public/pokemon/)
+- pikachu.png
+- eevee.png
+- gengar.png
+- gardevoir.png
+- charizard.png
+- umbreon.png
+
+#### Mystery Images (in public/mystery/)
+- coffee.jpg
+- music.jpg
+- gift.jpg
+
+#### Haunted Images (in public/haunted/)
+- whispers.jpg
+- manor.jpg
+- forest.jpg
+
+#### Miku Image
+- Add a Hatsune Miku image at public/miku.png
+
+You can find free Pokemon images on sites like Pokemon DB or use AI-generated images.
+For the other images, you can use personal photos or find appropriate free stock images.
+
+## Running the App
 
 ```bash
+# Install dependencies (if not already done)
+npm install
+
+# Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Customize
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Feel free to modify the app/data.ts file to personalize the messages and content for your loved one.
+
+## Mobile First
+
+This app is designed with a mobile-first approach, so it's perfect for sharing as a link that can be opened on a phone.
+
+## Technologies Used
+
+- Next.js 15
+- React 19
+- Tailwind CSS 4
+- TypeScript
 
 ## Learn More
 
@@ -34,3 +75,4 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# PokemonSkiyee
