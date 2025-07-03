@@ -69,7 +69,7 @@ Your devoted admirer ❤️`;
     }, 2000);
 
     return () => clearInterval(stepInterval);
-  }, []);
+  }, [steps.length]);
 
   useEffect(() => {
     if (showMessage) {
@@ -174,8 +174,8 @@ Your devoted admirer ❤️`;
             
             {bloomedFlowers > 0 && (
               <div className="mt-6 text-cyan-400 text-sm animate-fade-in">
-                You've awakened {bloomedFlowers} magical flower{bloomedFlowers > 1 ? 's' : ''}... 
-                {bloomedFlowers >= 3 ? ' The magic is growing stronger!' : ''}
+                                 You&apos;ve awakened {bloomedFlowers} magical flower{bloomedFlowers > 1 ? 's' : ''}... 
+                 {bloomedFlowers >= 3 ? ' The magic is growing stronger!' : ''}
               </div>
             )}
           </div>
