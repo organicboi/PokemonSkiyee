@@ -15,7 +15,7 @@ export default function ApologyPage() {
   const [heartBeats, setHeartBeats] = useState(0);
   const [bloomedFlowers, setBloomedFlowers] = useState(0);
 
-  const apologyMessage = `My dearest,
+  const apologyMessage = `My dearest Skiyeeeee,
 
 I know I didn't give you flowers when we met, and I can see the disappointment in your eyes. 
 
@@ -30,7 +30,7 @@ You deserve all the beauty in the world, and I want to be the one to give it to 
 Will you forgive me?
 
 With all my love and sincere apologies,
-Your devoted admirer ❤️`;
+Your devoted admirer chimkandi❤️`;
 
   const steps = [
     "A message awaits you in the digital realm...",
