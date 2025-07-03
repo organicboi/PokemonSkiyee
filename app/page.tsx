@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import Pokemon from './components/Pokemon';
 import Miku from './components/Miku';
 import Mystery from './components/Mystery';
@@ -48,6 +49,17 @@ export default function Home() {
 
   return (
     <div className="flex flex-col min-h-screen p-4 pb-20 relative">
+      {/* Navigation to Apology */}
+      <div className="absolute top-4 right-4 z-20">
+        <Link
+          href="/apology"
+          className="text-white/60 hover:text-pink-400 transition-colors duration-300 text-sm flex items-center space-x-2 bg-white/10 backdrop-blur-sm rounded-full px-3 py-2"
+        >
+          <span>💌</span>
+          <span>A Message</span>
+        </Link>
+      </div>
+      
       {/* Background image */}
       <div className="fixed inset-0 z-0 pointer-events-none">
         <Image 
