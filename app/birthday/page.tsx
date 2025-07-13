@@ -101,18 +101,18 @@ export default function BirthdayPage() {
   const generateSurprises = useCallback((): DailySurprise[] => {
     const currentYear = new Date().getFullYear();
     const surpriseData = [
-              { title: "Digital Love Letter", message: "My dearest Skiyeee, today begins our magical countdown! Every pixel of my heart beats for you. Like Miku&apos;s voice echoing through the digital realm, my love for you resonates endlessly. This is just the beginning of something beautiful! 💕", emoji: "💌", type: "love" as const },
-      { title: "Memory Garden", message: "Do you remember our first conversation? It was like discovering a rare shiny Pokémon - unexpected, magical, and life-changing. Your words painted colors in my grayscale world, just like Miku&apos;s melodies bring life to silence. 🌺", emoji: "🌸", type: "memory" as const },
-      { title: "Miku&apos;s Serenade", message: "🎵 &apos;In the digital sky where data flows like dreams, your love is the sweetest algorithm my heart has ever seen. Every day brings us closer to your special celebration!&apos; - A song composed just for you by Hatsune Miku herself! 🎵", emoji: "🎤", type: "song" as const },
+              { title: "Digital Love Letter", message: "My dearest Skiyeee, today begins our magical countdown! Every pixel of my heart beats for you. Like Miku's voice echoing through the digital realm, my love for you resonates endlessly. This is just the beginning of something beautiful! 💕", emoji: "💌", type: "love" as const },
+      { title: "Memory Garden", message: "Do you remember our first conversation? It was like discovering a rare shiny Pokémon - unexpected, magical, and life-changing. Your words painted colors in my grayscale world, just like miku's melodies bring life to silence. 🌺", emoji: "🌸", type: "memory" as const },
+      { title: "Skiyee Serenade", message: "🎵 &apos;In the digital sky where data flows like dreams, your love is the sweetest algorithm my heart has ever seen. Every day brings us closer to your special celebration!&apos; - A song composed just for you by Hatsune Skiyee herself! 🎵", emoji: "🎤", type: "song" as const },
       { title: "Virtual Bouquet", message: "Since I couldn&apos;t give you flowers that day, here&apos;s an eternal digital bouquet that will never wilt! Each bloom represents a moment I cherish with you. They&apos;re programmed to grow more beautiful each day, just like our connection! 🌹", emoji: "💐", type: "gift" as const },
-      { title: "Poem of the Heart", message: "In circuits of light and streams of code,\nYour smile is the path my heart has showed.\nLike Miku dancing in neon dreams,\nYou&apos;re more wonderful than anything seems.\n\nEach day until your birthday bright,\nI&apos;ll love you more with all my might! ✨", emoji: "📜", type: "poem" as const },
-      { title: "Digital Embrace", message: "Sending you the warmest virtual hug that transcends dimensions! Imagine Miku&apos;s gentle melody wrapping around you like a soft blanket. Even across the digital divide, my arms are always around you, my heart always with you. 🤗", emoji: "🫂", type: "love" as const },
-      { title: "Halfway Magic", message: "We&apos;re halfway through our journey! Can you feel the excitement building? It&apos;s like the anticipation before Miku&apos;s biggest concert, but a thousand times more special because it&apos;s all for YOU! The best is yet to come! ⭐", emoji: "🎊", type: "memory" as const },
-      { title: "Lullaby of Love", message: "🎶 Let me sing you a digital lullaby tonight. Close your eyes and imagine Miku&apos;s voice harmonizing with mine, creating a symphony of love that plays just for you. Sweet dreams, my birthday princess! 🎶", emoji: "🌙", type: "song" as const },
-      { title: "Future Visions", message: "I dream of all the birthdays we&apos;ll celebrate together - each one more magical than the last! In my dreams, we&apos;re dancing with Miku in a world where love creates its own reality. This is just the beginning of our forever! 🌟", emoji: "🔮", type: "dream" as const },
+      { title: "Poem of the Heart", message: "In circuits of light and streams of code,\nYour smile is the path my heart has showed.\nLike Skiyee dancing in neon dreams,\nYou&apos;re more wonderful than anything seems.\n\nEach day until your birthday bright,\nI&apos;ll love you more with all my might! ✨", emoji: "📜", type: "poem" as const },
+      { title: "Digital Embrace", message: "Sending you the warmest virtual hug that transcends dimensions! Imagine Skiyee&apos;s gentle melody wrapping around you like a soft blanket. Even across the digital divide, my arms are always around you, my heart always with you. 🤗", emoji: "🫂", type: "love" as const },
+      { title: "Halfway Magic", message: "We&apos;re halfway through our journey! Can you feel the excitement building? It&apos;s like the anticipation before Skiyee&apos;s biggest concert, but a thousand times more special because it&apos;s all for YOU! The best is yet to come! ⭐", emoji: "🎊", type: "memory" as const },
+      { title: "Lullaby of Love", message: "🎶 Let me sing you a digital lullaby tonight. Close your eyes and imagine Skiyee&apos;s voice harmonizing with mine, creating a symphony of love that plays just for you. Sweet dreams, my birthday princess! 🎶", emoji: "🌙", type: "song" as const },
+      { title: "Future Visions", message: "I dream of all the birthdays we&apos;ll celebrate together - each one more magical than the last! In my dreams, we&apos;re dancing with Skiyee in a world where love creates its own reality. This is just the beginning of our forever! 🌟", emoji: "🔮", type: "dream" as const },
       { title: "Almost There!", message: "The excitement is almost unbearable! Like waiting for the drop in your favorite song, the anticipation is building to something incredible! Tomorrow we&apos;ll be even closer to your special day! 🚀", emoji: "⚡", type: "love" as const },
-      { title: "Final Countdown", message: "This is it - the final day before your birthday! My heart is racing faster than Miku&apos;s most energetic beat! Tonight, dream of all the wonderful surprises waiting for you tomorrow! 🎂", emoji: "🎁", type: "gift" as const },
-      { title: "Birthday Eve", message: "Tomorrow is THE day! I can barely contain my excitement! Like Miku preparing for the performance of a lifetime, everything is ready for your special celebration! Sweet dreams, birthday girl - tomorrow we celebrate YOU! 🎉", emoji: "🌟", type: "dream" as const }
+      { title: "Final Countdown", message: "This is it - the final day before your birthday! My heart is racing faster than Skiyee&apos;s most energetic beat! Tonight, dream of all the wonderful surprises waiting for you tomorrow! 🎂", emoji: "🎁", type: "gift" as const },
+      { title: "Birthday Eve", message: "Tomorrow is THE day! I can barely contain my excitement! Like Skiyee preparing for the performance of a lifetime, everything is ready for your special celebration! Sweet dreams, birthday girl - tomorrow we celebrate YOU! 🎉", emoji: "🌟", type: "dream" as const }
     ];
 
     return surpriseData.map((data, index) => {
@@ -252,7 +252,7 @@ export default function BirthdayPage() {
             <div className="w-20 h-20 border-4 border-cyan-400/30 rounded-full animate-spin"></div>
             <div className="absolute top-0 left-0 w-20 h-20 border-4 border-t-cyan-400 rounded-full animate-spin"></div>
           </div>
-          <p className="text-cyan-300 mt-6 text-lg animate-pulse">Loading Miku&apos;s birthday magic...</p>
+          <p className="text-cyan-300 mt-6 text-lg animate-pulse">Loading Skiyee&apos;s birthday magic...</p>
         </div>
       </div>
     );
@@ -260,7 +260,7 @@ export default function BirthdayPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-cyan-900 to-teal-900 relative overflow-hidden">
-      {/* Animated Background with Miku Theme */}
+              {/* Animated Background with Skiyee Theme */}
       <div className="absolute inset-0">
         {/* Gradient Orbs */}
         <div 
@@ -307,12 +307,12 @@ export default function BirthdayPage() {
       ))}
 
       {/* Navigation */}
-      <div className="absolute top-8 left-8 z-30">
+      <div className="absolute top-4 left-4 sm:top-8 sm:left-8 z-30">
         <Link
           href="/"
-          className="group flex items-center space-x-3 bg-black/20 backdrop-blur-xl rounded-2xl px-6 py-3 text-cyan-300 hover:text-cyan-100 transition-all duration-300 hover:bg-black/30 border border-cyan-500/20 hover:border-cyan-400/40"
+          className="group flex items-center space-x-2 sm:space-x-3 bg-black/20 backdrop-blur-xl rounded-xl sm:rounded-2xl px-3 py-2 sm:px-6 sm:py-3 text-cyan-300 hover:text-cyan-100 transition-all duration-300 hover:bg-black/30 border border-cyan-500/20 hover:border-cyan-400/40 text-sm sm:text-base"
         >
-          <span className="text-xl group-hover:scale-110 transition-transform">←</span>
+          <span className="text-lg sm:text-xl group-hover:scale-110 transition-transform">←</span>
           <span className="font-medium">Back to Home</span>
         </Link>
       </div>
@@ -320,10 +320,10 @@ export default function BirthdayPage() {
       {/* Main Content */}
       <div className="relative z-20 min-h-screen flex flex-col">
         {/* Header */}
-        <div className="text-center pt-16 pb-8 sm:pt-24 sm:pb-12 px-4">
+        <div className="text-center pt-20 pb-8 sm:pt-24 sm:pb-12 px-4">
           <div className="relative inline-block">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold bg-gradient-to-r from-cyan-400 via-teal-300 to-cyan-500 bg-clip-text text-transparent mb-4 sm:mb-6 animate-pulse">
-              Miku&apos;s Birthday Magic
+              Skiyee&apos;s Birthday Magic
             </h1>
             <div className="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 text-2xl sm:text-4xl animate-bounce">🎤</div>
           </div>
@@ -430,7 +430,7 @@ export default function BirthdayPage() {
         {/* Enhanced Surprise Timeline */}
         <div className="max-w-6xl mx-auto px-4 sm:px-6 mb-8 sm:mb-12">
           <div className="text-center mb-8 sm:mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-cyan-100 mb-3 sm:mb-4">12 Days of Miku Magic</h2>
+                            <h2 className="text-3xl sm:text-4xl font-bold text-cyan-100 mb-3 sm:mb-4">12 Days of Skiyee Magic</h2>
             <div className="w-24 sm:w-32 h-1 bg-gradient-to-r from-cyan-400 to-teal-400 rounded-full mx-auto"></div>
           </div>
           
@@ -499,7 +499,7 @@ export default function BirthdayPage() {
           </div>
         </div>
 
-        {/* Enhanced Miku Section */}
+                  {/* Enhanced Skiyee Section */}
         <div className="flex justify-center mb-8 sm:mb-12 px-4">
           <div className="relative group">
             <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/20 to-teal-400/20 rounded-full blur-2xl group-hover:blur-3xl transition-all duration-300"></div>
