@@ -49,8 +49,15 @@ export default function Home() {
 
   return (
     <div className="flex flex-col min-h-screen p-4 pb-20 relative">
-      {/* Navigation to Apology */}
-      <div className="absolute top-4 right-4 z-20">
+      {/* Navigation Links */}
+      <div className="absolute top-4 right-4 z-20 flex space-x-2">
+        <Link
+          href="/birthday"
+          className="text-white/60 hover:text-[var(--miku-teal)] transition-colors duration-300 text-sm flex items-center space-x-2 bg-white/10 backdrop-blur-sm rounded-full px-3 py-2"
+        >
+          <span>🎂</span>
+          <span>Birthday</span>
+        </Link>
         <Link
           href="/apology"
           className="text-white/60 hover:text-pink-400 transition-colors duration-300 text-sm flex items-center space-x-2 bg-white/10 backdrop-blur-sm rounded-full px-3 py-2"
